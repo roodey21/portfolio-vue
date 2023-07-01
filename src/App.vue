@@ -16,11 +16,11 @@ onMounted(() => {
 
 </script>
 <template>
-  <div class="relative overflow-hidden p-4 md:p-8">
+  <div class="relative p-4 md:p-8">
     <RouterView 
       @show-navbar="showNavbar = !showNavbar"
     />
-    <div class="fixed top-0 w-72 transition-all ease-in-out duration-700 delay-200 bg-zinc-900 h-screen p-16 text-slate-50 flex flex-col" 
+    <div class="fixed top-0 md:w-72 transition-all ease-in-out duration-700 delay-200 bg-zinc-900 h-screen p-16 text-slate-50 flex flex-col" 
       :class="{'right-0': showNavbar === true, '-right-1/2': showNavbar === false}"
     >
       <div class="navbar-wrapper text-right">
