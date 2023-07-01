@@ -16,14 +16,14 @@ onMounted(() => {
 </script>
 
 <template>
-  <main id="home" class="container grid grid-cols-12 gap-5 relative">
-    <div class="col-12 md:col-6 md:col-span-12 row">
-        <CardBasic class="col-12 order-2 md:order-1 md:col-6 hidden md:block">
+  <main id="home" class="container row gap-5 relative">
+    <div class="col-span-12 row">
+        <CardBasic class="col-span-12 order-2 md:order-1 md:col-span-6 hidden md:block">
             <div class="flex flex-row justify-between items-center">
                 <h3 class="font-semibold text-2xl">My Portfolio</h3>
             </div>
         </CardBasic>
-        <CardBasic class="col-12 order-1 md:order-2 md:col-6">
+        <CardBasic class="col-span-12 order-1 md:order-2 md:col-span-6">
             <div class="flex flex-row justify-between items-center">
                 <h3 class="font-semibold text-2xl">Roodey<span class="text-zinc-400">Badd</span></h3>
                 <span class="material-icons menu-icon !text-3xl hover:cursor-pointer"
@@ -32,9 +32,9 @@ onMounted(() => {
             </div>
         </CardBasic>
     </div>
-    <div class="col-12 row">
-        <div class="col-12 md:col-6 row">
-            <CardBasic v-for="portfolio in portfolios" :key="portfolio" class="col-12 flex flex-row flex-wrap gap-5 hover:cursor-pointer"
+    <div class="col-span-12 row">
+        <div class="col-span-12 md:col-span-6 row">
+            <CardBasic v-for="portfolio in portfolios" :key="portfolio" class="col-span-12 flex flex-row flex-wrap gap-5 hover:cursor-pointer"
                 @click="showDetail(portfolio)"
                 :class="{'bg-zinc-800': portfolioActive && portfolio.id == portfolioActive.id}"
             >
@@ -48,7 +48,7 @@ onMounted(() => {
                 </div>
             </CardBasic>
         </div>
-        <div class="col-12 hidden md:block md:col-6 gap-5" v-if="portfolioActive">
+        <div class="col-span-12 hidden md:block md:col-span-6 gap-5" v-if="portfolioActive">
             <div class="sticky top-5 h-min flex flex-col gap-5" id="sticky-card">
                 <div class="image grid grid-cols-2 gap-5">
                     <img :src="image" v-for="image in portfolioActive.images" :key="image" alt="" class="rounded-2xl aspect-video">

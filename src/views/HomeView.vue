@@ -85,8 +85,8 @@ const portfolios = [
               <h5 class="font-medium text-zinc-400">Based In :</h5>
               <p>Sleman City</p>
             </div>
-            <div class="h-24 w-full rounded-3xl p-4 bg-bottom" style="background-image: url('src/assets/images/maps.png');">
-              
+            <div class="h-24 w-full rounded-3xl overflow-hidden relative">
+              <img src="src/assets/images/maps.png" class="w-full bottom-0 absolute" alt="">
             </div>
           </div>
           <div class="bg-zinc-900 p-2.5 text-zinc-50 rounded-3xl flex flex-row justify-between items-center">
@@ -123,15 +123,16 @@ const portfolios = [
           <a href="#" class="font-light text-xl md:text-2xl">See All</a>
         </div>
         <div class="flex flex-nowrap md:items-center overflow-x-scroll gap-5 no-scrollbar">
-          <div v-for="portfolio in portfolios" :key="portfolio" class="w-52 rounded-3xl h-52 flex-none flex items-center group justify-center bg-cover bg-center overflow-hidden" :style="{ 'background-image': 'url(' + portfolio.src + ')' }">
-            <a href="#portfolio" class="relative h-full w-full bg-zinc-900/60 group-hover:opacity-100 opacity-0 transition-all duration-300">
+          <div v-for="portfolio in portfolios" :key="portfolio" class="relative w-52 rounded-3xl h-52 flex-none flex items-center group overflow-hidden">
+            <router-link :to="{ name: 'portfolio' }" class="relative z-10 h-full w-full bg-zinc-900/60 group-hover:opacity-100 opacity-0 transition-all duration-300">
               <span class="absolute bottom-0 group-hover:bottom-1/2 group-hover:translate-y-1/2 text-xl left-1/2 -translate-x-1/2 font-semibold ease-in-out duration-200 p-2">
                 {{ portfolio.name }} <br>
                 <span class="text-base font-medium">
-                  {{ portfolio.description }}
+                  Read More
                 </span>
               </span>
-            </a>
+            </router-link>
+            <img :src="portfolio.src" class="absolute h-full opacity-80" alt="">
           </div>
         </div>
       </div>
