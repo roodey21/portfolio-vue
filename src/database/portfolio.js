@@ -5,10 +5,10 @@ const portfolios = [
         name: 'Guruinovatif',
         description: 'E-Learning Platform for Teachers',
         techStack: 'Laravel, Bootstrap, Tailwind CSS, Livewire, Alpine JS, jQuery, MySQL',
-        cover: '../src/assets/images/guruinovatif.png',
+        cover: '/images/guruinovatif.png',
         images: [
-            '../src/assets/images/guruinovatif.png',
-            '../src/assets/images/guruinovatif.png',
+            '/images/guruinovatif.png',
+            '/images/guruinovatif.png',
         ]
     },
     {
@@ -17,10 +17,10 @@ const portfolios = [
         name: 'NdoroArum',
         description: 'Booking Ticketing',
         techStack: 'Laravel, Bootstrap, jQuery, MySQL',
-        cover: '../src/assets/images/ndoroarum.png',
+        cover: '/images/ndoroarum.png',
         images: [
-            '../src/assets/images/ndoroarum.png',
-            '../src/assets/images/ndoroarum.png',
+            '/images/ndoroarum.png',
+            '/images/ndoroarum_02.png',
         ]
     },
     {
@@ -29,10 +29,9 @@ const portfolios = [
         name: 'Bakti Bersama',
         description: 'Unit Pengumpul Zakat',
         techStack: 'Laravel, Bootstrap, jQuery, MySQL',
-        cover: '../src/assets/images/baktibersama.png',
+        cover: '/images/baktibersama.png',
         images: [
-            '../src/assets/images/baktibersama.png',
-            '../src/assets/images/baktibersama.png',
+            '/images/baktibersama.png',
         ]
     },
     {
@@ -41,12 +40,12 @@ const portfolios = [
         name: 'LPP Hotel Group',
         description: 'Landing Page for LPP Hotel Group',
         techStack: 'Laravel, Bootstrap, jQuery, MySQL',
-        cover: '../src/assets/images/lpphotel.png',
+        cover: '/images/lpphotel.png',
         images: [
-            '../src/assets/images/lpphotel.png',
-            '../src/assets/images/lpphotel_02.png',
-            '../src/assets/images/lpphotel_03.png',
-            '../src/assets/images/lpphotel_04.png',
+            '/images/lpphotel.png',
+            '/images/lpphotel_02.png',
+            '/images/lpphotel_03.png',
+            '/images/lpphotel_04.png',
         ]
     },
     {
@@ -55,10 +54,10 @@ const portfolios = [
         name: 'Siskubis',
         description: 'Sistem Inkubasi Bisnis',
         techStack: 'Laravel, Bootstrap, jQuery, MySQL, Livewire, Alpine JS',
-        cover: '../src/assets/images/siskubis.png',
+        cover: '/images/siskubis.png',
         images: [
-            '../src/assets/images/siskubis.png',
-            '../src/assets/images/siskubis_02.png',
+            '/images/siskubis.png',
+            '/images/siskubis_02.png',
         ]
     },
 ]
