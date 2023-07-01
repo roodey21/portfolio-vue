@@ -1,4 +1,6 @@
 import './assets/style.css'
+import './assets/layouting.css'
+
 import 'material-icons/iconfont/material-icons.css'
 
 import { createApp } from 'vue'

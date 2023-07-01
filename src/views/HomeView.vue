@@ -7,22 +7,22 @@ const portfolios = [
   {
     name: 'Ndoroarum',
     description: 'Ticketing App',
-    src: '../src/assets/ndoroarum.png',
+    src: '../src/assets/images/ndoroarum.png',
   },
   {
     name: 'Siskubis',
     description: 'Sistem Inkubasi Bisnis',
-    src: '../src/assets/siskubis.png',
+    src: '../src/assets/images/siskubis.png',
   },
   {
     name: 'Guruinovatif',
     description: 'E-Learning Platform',
-    src: '../src/assets/guruinovatif.png',
+    src: '../src/assets/images/guruinovatif.png',
   },
   {
     name: 'Baktibersama',
     description: 'Donation Platform',
-    src: '../src/assets/baktibersama.png',
+    src: '../src/assets/images/baktibersama.png',
   },
 ]
 </script>
@@ -30,11 +30,6 @@ const portfolios = [
 <template>
   <main id="home" class="container grid grid-cols-12 gap-5 relative overflow-hidden">
     <div class="col-span-12 md:col-span-6 order-2 md:order-1 flex flex-col gap-5">
-      <!-- <div class="bg-zinc-900 p-6 md:p-8 text-zinc-50 rounded-3xl w-full">
-        <h1 class="text-4xl md:text-6xl font-semibold">
-          The future belongs to those who believe in the beauty of their dreams.
-        </h1>
-      </div> -->
       <CardBasic>
         <h1 class="text-4xl md:text-6xl font-semibold">
           The future belongs to those who believe in the beauty of their dreams.
@@ -78,7 +73,7 @@ const portfolios = [
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
         <div class="bg-zinc-900 text-zinc-50 h-[420px] rounded-3xl overflow-hidden">
-          <img src="../assets/my-self.jpg" alt="" class="w-full">
+          <img src="../assets/images/my-self.jpg" alt="" class="w-full">
         </div>
         <div class="flex flex-col gap-5">
           <div class="bg-zinc-900 p-6 md:p-8 rounded-3xl text-xl text-zinc-50 flex flex-row justify-between items-center">
@@ -90,7 +85,7 @@ const portfolios = [
               <h5 class="font-medium text-zinc-400">Based In :</h5>
               <p>Sleman City</p>
             </div>
-            <div class="h-24 w-full rounded-3xl p-4 bg-bottom" style="background-image: url('src/assets/maps.png');">
+            <div class="h-24 w-full rounded-3xl p-4 bg-bottom" style="background-image: url('src/assets/images/maps.png');">
               
             </div>
           </div>
@@ -138,12 +133,6 @@ const portfolios = [
               </span>
             </a>
           </div>
-          <!-- <div class="w-52 relative rounded-3xl h-52 flex-none flex items-center group justify-center bg-cover bg-center" style="background-image: url('./src/assets/ndoroarum.png');">
-            <a href="#portfolio" class="absolute group-hover:opacity-100 opacity-0 transition-all duration-300 top-1/2 -translate-y-1/2 text-xl">Read More</a>
-          </div>
-          <div class="w-52 relative rounded-3xl h-52 flex-none flex items-center group justify-center bg-cover bg-center" style="background-image: url('./src/assets/ndoroarum.png');">
-            <a href="#portfolio" class="absolute group-hover:opacity-100 opacity-0 transition-all duration-300 top-1/2 -translate-y-1/2 text-xl">Read More</a>
-          </div> -->
         </div>
       </div>
     </div>

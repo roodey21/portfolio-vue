@@ -20,7 +20,7 @@ onMounted(() => {
     <RouterView 
       @show-navbar="showNavbar = !showNavbar"
     />
-    <div class="fixed top-0 transition-all ease-in-out duration-700 delay-200 bg-zinc-900 h-screen p-16 text-slate-50 flex flex-col" 
+    <div class="fixed top-0 w-72 transition-all ease-in-out duration-700 delay-200 bg-zinc-900 h-screen p-16 text-slate-50 flex flex-col" 
       :class="{'right-0': showNavbar === true, '-right-1/2': showNavbar === false}"
     >
       <div class="navbar-wrapper text-right">
@@ -31,16 +31,16 @@ onMounted(() => {
           >close</span>
         </a>
       </div>
-      <ul class="mt-5 text-right transition-all">
-        <li class="p-1 hover:bg-zinc-800">
-          <a href="#home">Home</a>
-        </li>
-        <li class="p-1 hover:bg-zinc-800">
-          <a href="#about">About</a>
-        </li>
-        <li class="p-1 hover:bg-zinc-800">
-          <a href="#portfolio">PortFolio</a>
-        </li>
+      <ul class="mt-5 text-right transition-all space-y-2">
+        <router-link :to="{ name: 'home' }">
+          <li class="p-1 hover:bg-zinc-800 rounded">Home</li>
+        </router-link>
+        <routerlink :to="{ name: 'about'}">
+          <li class="p-1 hover:bg-zinc-800 rounded">About</li>
+        </routerlink>
+        <router-link :to="{ name: 'portfolio'}">
+          <li class="p-1 hover:bg-zinc-800 rounded">Portfolio</li>
+        </router-link>
       </ul>
     </div>
   </div>
