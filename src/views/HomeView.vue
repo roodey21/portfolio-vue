@@ -7,22 +7,22 @@ const portfolios = [
   {
     name: 'Ndoroarum',
     description: 'Ticketing App',
-    src: '../src/assets/images/ndoroarum.png',
+    src: '/images/ndoroarum.png',
   },
   {
     name: 'Siskubis',
     description: 'Sistem Inkubasi Bisnis',
-    src: '../src/assets/images/siskubis.png',
+    src: '/images/siskubis.png',
   },
   {
     name: 'Guruinovatif',
     description: 'E-Learning Platform',
-    src: '../src/assets/images/guruinovatif.png',
+    src: '/images/guruinovatif.png',
   },
   {
     name: 'Baktibersama',
     description: 'Donation Platform',
-    src: '../src/assets/images/baktibersama.png',
+    src: '/images/baktibersama.png',
   },
 ]
 </script>
