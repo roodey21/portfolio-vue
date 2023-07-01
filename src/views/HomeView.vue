@@ -86,7 +86,7 @@ const portfolios = [
               <p>Sleman City</p>
             </div>
             <div class="h-24 w-full rounded-3xl overflow-hidden relative">
-              <img src="src/assets/images/maps.png" class="w-full bottom-0 absolute" alt="">
+              <img src="../assets/images/maps.png" class="w-full bottom-0 absolute" alt="">
             </div>
           </div>
           <div class="bg-zinc-900 p-2.5 text-zinc-50 rounded-3xl flex flex-row justify-between items-center">
