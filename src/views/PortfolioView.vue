@@ -25,7 +25,7 @@ onMounted(() => {
         </CardBasic>
         <CardBasic class="col-span-12 order-1 md:order-2 md:col-span-6">
             <div class="flex flex-row justify-between items-center">
-                <h3 class="font-semibold text-2xl">Roodey<span class="text-zinc-400">Badd</span></h3>
+                <router-link :to="{ name: 'home' }"><h3 class="font-semibold text-2xl">Roodey<span class="text-zinc-400">Badd</span></h3></router-link>
                 <span class="material-icons menu-icon !text-3xl hover:cursor-pointer"
                     @click="emit('show-navbar')"
                 > menu </span>
@@ -43,8 +43,8 @@ onMounted(() => {
                 >
                 </div>
                 <div class="text-slate-50">
-                    <h2 class="text-3xl font-semibold mb-2">{{ portfolio.name }}</h2>
-                    <p class="text-xl font-medium text-slate-200/80">{{ portfolio.description }}</p>
+                    <h2 class="text-xl md:text-3xl font-semibold mb-2">{{ portfolio.name }}</h2>
+                    <p class="text-lg font-medium text-slate-200/80">{{ portfolio.description }}</p>
                 </div>
             </CardBasic>
         </div>

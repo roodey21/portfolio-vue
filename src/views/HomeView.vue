@@ -65,7 +65,7 @@ const portfolios = [
     <div class="col-span-12 md:col-span-6 order-1 md:order-2 flex flex-col gap-5">
       <div class="bg-zinc-900 h-min p-5 md:p-8 text-zinc-50 rounded-3xl flex flex-col relative">
         <div class="flex flex-row justify-between items-center">
-          <h3 class="font-semibold text-2xl">Roodey<span class="text-zinc-400">Badd</span></h3>
+          <router-link :to="{ name: 'home' }"><h3 class="font-semibold text-2xl">Roodey<span class="text-zinc-400">Badd</span></h3></router-link>
           <span class="material-icons menu-icon !text-3xl hover:cursor-pointer"
             @click="emit('show-navbar')"
           > menu </span>
@@ -120,7 +120,7 @@ const portfolios = [
           <h1 class="text-2xl md:text-3xl font-semibold">
             PortFolio
           </h1>
-          <a href="#" class="font-light text-xl md:text-2xl">See All</a>
+          <router-link :to="{ name: 'portfolio' }" class="font-light text-xl md:text-2xl">See All</router-link>
         </div>
         <div class="flex flex-nowrap md:items-center overflow-x-scroll gap-5 no-scrollbar">
           <div v-for="portfolio in portfolios" :key="portfolio" class="relative w-52 rounded-3xl h-52 flex-none flex items-center group overflow-hidden">
