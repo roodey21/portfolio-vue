@@ -16,7 +16,7 @@ onMounted(() => {
 
 </script>
 <template>
-  <div class="relative p-4 md:p-8">
+  <div class="relative p-4 md:p-8 scroll-smooth">
     <RouterView 
       @show-navbar="showNavbar = !showNavbar"
     />
@@ -32,18 +32,15 @@ onMounted(() => {
         </a>
       </div>
       <ul class="mt-5 text-xl text-right transition-all space-y-2">
-        <router-link :to="{ name: 'home' }">
+        <router-link :to="{ name: 'home' }" :active-class="'bg-zinc-800'">
           <li class="p-1 hover:bg-zinc-800 rounded">Home</li>
         </router-link>
         <router-link :to="{ name: 'portfolio'}">
           <li class="p-1 hover:bg-zinc-800 rounded">Portfolio</li>
         </router-link>
-        <routerlink :to="{ name: 'about'}">
+        <router-link :to="{ name: 'about'}">
           <li class="p-1 hover:bg-zinc-800 rounded">About</li>
-        </routerlink>
-        <routerlink :to="{ name: 'about'}">
-          <li class="p-1 hover:bg-zinc-800 rounded">Contact Me</li>
-        </routerlink>
+        </router-link>
       </ul>
     </div>
   </div>

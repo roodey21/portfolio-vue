@@ -34,7 +34,7 @@ onMounted(() => {
     </div>
     <div class="col-span-12 row">
         <div class="col-span-12 md:col-span-6 row">
-            <CardBasic v-for="portfolio in portfolios" :key="portfolio" class="col-span-12 flex flex-row flex-wrap gap-5 hover:cursor-pointer"
+            <CardBasic v-for="portfolio in portfolios" :key="portfolio" class="col-span-12 flex flex-row flex-wrap gap-5 hover:cursor-pointer hover:bg-zinc-800"
                 @click="showDetail(portfolio)"
                 :class="{'bg-zinc-800': portfolioActive && portfolio.id == portfolioActive.id}"
             >
@@ -45,6 +45,7 @@ onMounted(() => {
                 <div class="text-slate-50">
                     <h2 class="text-xl md:text-3xl font-semibold mb-2">{{ portfolio.name }}</h2>
                     <p class="text-lg font-medium text-slate-200/80">{{ portfolio.description }}</p>
+                    <p class="block md:hidden text-base font-base text-slate-200/80">Stack : {{ portfolio.techStack }}</p>
                 </div>
             </CardBasic>
         </div>

@@ -28,7 +28,7 @@ const portfolios = [
 </script>
 
 <template>
-  <main id="home" class="container grid grid-cols-12 gap-5 relative overflow-hidden">
+  <main id="home" class="container row gap-5 relative overflow-hidden">
     <div class="col-span-12 md:col-span-6 order-2 md:order-1 flex flex-col gap-5">
       <CardBasic>
         <h1 class="text-4xl md:text-6xl font-semibold">
@@ -63,24 +63,24 @@ const portfolios = [
       </div>
     </div>
     <div class="col-span-12 md:col-span-6 order-1 md:order-2 flex flex-col gap-5">
-      <div class="bg-zinc-900 h-min p-5 md:p-8 text-zinc-50 rounded-3xl flex flex-col relative">
+      <CardBasic class="flex flex-col relative">
         <div class="flex flex-row justify-between items-center">
           <router-link :to="{ name: 'home' }"><h3 class="font-semibold text-2xl">Roodey<span class="text-zinc-400">Badd</span></h3></router-link>
           <span class="material-icons menu-icon !text-3xl hover:cursor-pointer"
             @click="emit('show-navbar')"
           > menu </span>
         </div>
-      </div>
+      </CardBasic>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
         <div class="bg-zinc-900 text-zinc-50 h-[420px] rounded-3xl overflow-hidden">
           <img src="../assets/images/my-self.jpg" alt="" class="w-full">
         </div>
         <div class="flex flex-col gap-5">
-          <div class="bg-zinc-900 p-6 md:p-8 rounded-3xl text-xl text-zinc-50 flex flex-row justify-between items-center">
+          <CardBasic class="flex flex-row justify-between items-center">
             <h5 class="font-medium text-zinc-400">Name :</h5>
             <p>Fahrudin Yusuf A</p>
-          </div>
-          <div class="bg-zinc-900 p-6 md:p-8 rounded-3xl text-xl text-zinc-50 flex flex-col gap-5">
+          </CardBasic>
+          <CardBasic class="flex flex-col gap-5">
             <div class="flex flex-row justify-between items-center">
               <h5 class="font-medium text-zinc-400">Based In :</h5>
               <p>Sleman City</p>
@@ -88,8 +88,8 @@ const portfolios = [
             <div class="h-24 w-full rounded-3xl overflow-hidden relative">
               <img src="../assets/images/maps.png" class="w-full bottom-0 absolute" alt="">
             </div>
-          </div>
-          <div class="bg-zinc-900 p-2.5 text-zinc-50 rounded-3xl flex flex-row justify-between items-center">
+          </CardBasic>
+          <CardBasic class="!p-2.5 flex flex-row justify-between items-center">
             <a href="https://www.linkedin.com/in/fahrudinyusufabadi/" target="_blank" class="hover:opacity-60">
               <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M29.9999 1.2C14.094 1.2 1.19995 14.094 1.19995 30C1.19995 45.906 14.094 58.8 29.9999 58.8C45.9059 58.8 58.7999 45.906 58.7999 30C58.7999 14.094 45.9059 1.2 29.9999 1.2ZM22.9499 41.937H17.1179V23.169H22.9499V41.937ZM19.9979 20.865C18.1559 20.865 16.9649 19.56 16.9649 17.946C16.9649 16.299 18.1919 15.033 20.0729 15.033C21.9539 15.033 23.1059 16.299 23.1419 17.946C23.1419 19.56 21.9539 20.865 19.9979 20.865ZM44.2499 41.937H38.4179V31.536C38.4179 29.115 37.5719 27.471 35.4629 27.471C33.8519 27.471 32.8949 28.584 32.4719 29.655C32.3159 30.036 32.2769 30.576 32.2769 31.113V41.934H26.4419V29.154C26.4419 26.811 26.3669 24.852 26.2889 23.166H31.3559L31.6229 25.773H31.7399C32.5079 24.549 34.3889 22.743 37.5359 22.743C41.3729 22.743 44.2499 25.314 44.2499 30.84V41.937Z" fill="white"/>
@@ -110,12 +110,12 @@ const portfolios = [
                 <path d="M29.9999 1.2C14.094 1.2 1.19995 14.094 1.19995 30C1.19995 45.906 14.094 58.8 29.9999 58.8C45.9059 58.8 58.7999 45.906 58.7999 30C58.7999 14.094 45.9059 1.2 29.9999 1.2ZM36.8219 21.102H32.4929C31.9799 21.102 31.4099 21.777 31.4099 22.674V25.8H36.8249L36.0059 30.258H31.4099V43.641H26.3009V30.258H21.6659V25.8H26.3009V23.178C26.3009 19.416 28.9109 16.359 32.4929 16.359H36.8219V21.102Z" fill="white"/>
               </svg>
             </a>
-          </div>
+          </CardBasic>
         </div>
       </div>
     </div>
     <div id="portfolio" class="col-span-12 order-4 md:order-3 md:col-span-7">
-      <div class="h-full bg-zinc-900 p-6 md:p-8 text-zinc-50 rounded-3xl w-full flex flex-col gap-5">
+      <CardBasic class="flex flex-col gap-5">
         <div class="flex flex-row justify-between items-center">
           <h1 class="text-2xl md:text-3xl font-semibold">
             PortFolio
@@ -135,10 +135,10 @@ const portfolios = [
             <img :src="portfolio.src" class="absolute h-full opacity-80" alt="">
           </div>
         </div>
-      </div>
+      </CardBasic>
     </div>
     <div id="about" class="col-span-12 order-3 md:order-4 md:col-span-5">
-      <div class="h-full bg-zinc-900 p-6 md:p-8 text-zinc-50 rounded-3xl w-full flex flex-col gap-5">
+      <CardBasic class="h-full flex flex-col gap-5">
         <div class="flex flex-row justify-between items-center">
           <h1 class="text-2xl md:text-3xl font-semibold">
             About Me
@@ -146,7 +146,7 @@ const portfolios = [
           <a href="#" class="font-light text-xl md:text-2xl">Resume</a>
         </div>
         <p>I am an experienced web developer specializing in Laravel and Tailwind CSS for backend development. With a strong command of backend technologies, particularly Laravel, I excel in designing and implementing robust systems, creating RESTful APIs, managing databases, and ensuring smooth data flow between the frontend and backend. I also possess expertise in utilizing Tailwind CSS to craft clean and responsive user interfaces. </p>
-      </div>
+      </CardBasic>
     </div>
   </main>
 </template>
