@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
 import PortfolioView from '../views/PortfolioView.vue'
+import NewPortfolioView from '../views/NewPortfolioView.vue'
 
 const router = createRouter({
   scrollBehavior(to, from, savedPosition) {
@@ -18,6 +19,11 @@ const router = createRouter({
     {
       path: '/portfolio',
       name: 'portfolio',
+      component: NewPortfolioView
+    },
+    {
+      path: '/new-portfolio',
+      name: 'new-portfolio',
       component: PortfolioView
     },
     {

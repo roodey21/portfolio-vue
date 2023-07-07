@@ -25,16 +25,44 @@ const emit = defineEmits(['show-navbar'])
       <div class="col-span-12 md:col-span-3 bg-zinc-900 text-zinc-50 h-[420px] rounded-3xl overflow-hidden">
         <img src="../assets/images/my-self.jpg" alt="" class="w-full">
       </div>
-      <CardBasic class="col-span-12 md:col-span-4 h-min text-lg">
-        <p>Hello there, I am <span class="font-semibold">Roodey</span> an experienced fullstack web developer specializing in Laravel and Tailwind CSS. With a strong command of backend technologies, particularly Laravel, I excel in designing and implementing robust systems, creating RESTful APIs, managing databases, and ensuring smooth data flow between the frontend and backend. I also possess expertise in utilizing Tailwind CSS to craft clean and responsive user interfaces. </p>
-      </CardBasic>
+      <div class="col-span-12 md:col-span-4 h-full flex flex-col gap-4">
+        <CardBasic class="h-max text-lg">
+          <p class="tracking-tighter">Hello there, I am <span class="font-semibold">Roodey</span> an experienced fullstack web developer specializing in Laravel and Tailwind CSS. With a strong command of backend technologies, particularly Laravel, I excel in designing and implementing robust systems, creating RESTful APIs, managing databases, and ensuring smooth data flow between the frontend and backend. I also possess expertise in utilizing Tailwind CSS to craft clean and responsive user interfaces. </p>
+        </CardBasic>
+        <CardBasic class="hidden md:block">
+          I ♥ Art, Music, Technology, Games, and I love to learn new things.
+        </CardBasic>
+      </div>
+      <CardBasic class="col-span-12 md:col-span-5 flex flex-col gap-5">
+          <h1 class="text-2xl md:text-3xl font-semibold">
+            Bio
+          </h1>
+          <ul class="space-y-2">
+            <li class="flex flex-row text-lg">
+              <h6 class="font-semibold mr-8">2020</h6>
+              <span>Internship at <a href="https://www.razen.co.id" class="underline underline-offset-4">PT. Rezen Teknologi Indonesia</a> as a Web Developer.</span>
+            </li>
+            <li class="flex flex-row text-lg">
+              <h6 class="font-semibold mr-8">2021</h6>
+              <span>Worked at Indah Cargo Group as office administrator.</span>
+            </li>
+            <li class="flex flex-row text-lg">
+              <h6 class="font-semibold mr-8">2021 to <br> present</h6>
+              <span>Works as a freelance fullstack web developer.</span>
+            </li>
+            <li class="flex flex-row text-lg">
+              <h6 class="font-semibold mr-8">2022 to <br> 2023</h6>
+              <span>Worked at <a href="https://www.digitaliz.net/" class="underline underline-offset-4">Digitaliz</a> as Fullstack Web Developer.</span>
+            </li>
+          </ul>
+        </CardBasic>
     </div>
     <div class="col-span-12 row">
-      <CardBasic class="col-span-12 md:col-span-7 flex flex-col gap-5">
+      <CardBasic class="col-span-12 md:col-span-9 flex flex-col gap-5">
         <h1 class="text-2xl md:text-3xl font-semibold">
           Tech Stacks
         </h1>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-5">
           <CardBasic class="!bg-zinc-800">
             <div class="flex flex-col justify-center items-center gap-2">
               <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M9.51861 56.9379L4.51611 0.830444H59.4841L54.4761 56.9294L31.9666 63.1694L9.51861 56.9379Z" fill="#E44D26"/> <path d="M32 58.4L50.189 53.357L54.4685 5.41797H32V58.4Z" fill="#F16529"/> <path d="M31.9999 26.2276H22.8939L22.2649 19.1806H31.9999V12.2996H14.7444L14.9094 14.1456L16.6004 33.1091H31.9999V26.2276ZM31.9999 44.0991L31.9694 44.1076L24.3059 42.0376L23.8164 36.5501H16.9079L17.8719 47.3546L31.9684 51.2676L31.9999 51.2591V44.0991Z" fill="#EBEBEB"/> <path d="M31.9761 26.2276V33.1091H40.4496L39.6511 42.0336L31.9761 44.1051V51.2646L46.0836 47.3546L46.1871 46.1921L47.8041 28.0756L47.9716 26.2276H46.1176H31.9761ZM31.9761 12.2996V19.1806H48.5981L48.7361 17.6346L49.0501 14.1456L49.2146 12.2996H31.9761Z" fill="white"/> </svg>
@@ -110,7 +138,7 @@ const emit = defineEmits(['show-navbar'])
         </div>
       </CardBasic>
       <div class="col-span-12 md:col-span-5 flex flex-col gap-5">
-        <CardBasic class="h-min flex flex-col gap-5">
+        <!-- <CardBasic class="h-min flex flex-col gap-5">
           <h1 class="text-2xl md:text-3xl font-semibold">
             Bio
           </h1>
@@ -132,8 +160,8 @@ const emit = defineEmits(['show-navbar'])
               <span>Worked at <a href="https://www.digitaliz.net/" class="underline underline-offset-4">Digitaliz</a> as Fullstack Web Developer.</span>
             </li>
           </ul>
-        </CardBasic>
-        <CardBasic>
+        </CardBasic> -->
+        <CardBasic class="block md:hidden">
           I ♥ Art, Music, Technology, Games, and I love to learn new things.
         </CardBasic>
       </div>

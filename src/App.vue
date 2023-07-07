@@ -20,7 +20,7 @@ onMounted(() => {
     <RouterView 
       @show-navbar="showNavbar = !showNavbar"
     />
-    <div class="fixed top-0 w-full md:w-72 transition-all ease-in-out duration-700 delay-200 bg-zinc-900 h-screen p-16 text-slate-50 flex flex-col" 
+    <div class="fixed top-0 w-full md:w-72 transition-all z-30 ease-in-out duration-700 delay-75 bg-zinc-900 h-screen p-16 text-slate-50 flex flex-col" 
       :class="{'right-0': showNavbar === true, '-right-full': showNavbar === false}"
     >
       <div class="navbar-wrapper text-right">
