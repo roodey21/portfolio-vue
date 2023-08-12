@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.0.2",
     "@vitejs/plugin-legacy": "^4.0.5",
     "material-icons": "^1.13.8",
     "pinia": "^2.1.3",
