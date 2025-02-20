@@ -16,3 +16,7 @@ body {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
+
+.key-feature ul {
+    @apply ml-5 list-disc
+}
