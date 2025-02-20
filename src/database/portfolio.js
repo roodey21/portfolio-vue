@@ -246,7 +246,7 @@ const portfolios = [
             '/images/siskubis.png',
             '/images/siskubis_02.png',
         ],
-        source: 'https://arsikarta.id/',
+        source: 'https://arsikarta.com/',
         category: 'freelance'
     },
 ]
