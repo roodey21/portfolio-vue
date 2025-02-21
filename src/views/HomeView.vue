@@ -187,7 +187,7 @@ const experienceYears = currentYear - startWorkDate.getFullYear();
           <h1 class="text-2xl font-semibold md:text-3xl">
             About Me
           </h1>
-          <a href="#" class="text-xl font-light md:text-2xl">Resume</a>
+          <a href="https://1drv.ms/b/c/b859ab788ce5e2d3/EcAYyqidRr5AvELhSP7JaMMBjvkG7KczPZQMwmspIRwS9A?e=KIPQ3O" target="_blank" class="text-xl font-light md:text-2xl">Resume</a>
         </div>
         <p>
           {{ about.about }}
