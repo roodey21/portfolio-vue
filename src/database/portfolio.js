@@ -249,6 +249,94 @@ const portfolios = [
         source: 'https://arsikarta.com/',
         category: 'freelance'
     },
+    {
+        id: 14,
+        slug: 'narasena',
+        platform: 'website',
+        name: 'Narasena Co-Living',
+        description: 'Landing Page & Booking System Narasena Co-Living',
+        techStack: 'Laravel, Bootstrap, jQuery, MySQL',
+        cover: '/images/narasena.png',
+        features: [
+            'Landing page & room showcase',
+            'List kamar & harga',
+            'Testimoni & review tamu',
+            'Integrasi booking engine'
+        ],
+        role: 'Fullstack Developer',
+        images: [
+            '/images/narasena.png',
+            '/images/narasena_02.png',
+        ],
+        source: 'https://narasenacoliving.com/',
+        category: 'freelance'
+    },
+    {
+        id: 15,
+        slug: 'mantravana',
+        platform: 'website',
+        name: 'Mantravana Co-Living',
+        description: 'Landing Page & Booking System Mantravana Co-Living',
+        techStack: 'Laravel, Bootstrap, jQuery, MySQL',
+        cover: '/images/mantravana.png',
+        features: [
+            'Landing page & room showcase',
+            'List kamar & harga',
+            'Testimoni & review tamu',
+            'Integrasi booking engine'
+        ],
+        role: 'Fullstack Developer',
+        images: [
+            '/images/mantravana.png',
+            '/images/mantravana_02.png',
+        ],
+        source: 'https://mantravanacoliving.com/',
+        category: 'freelance'
+    },
+    {
+        id: 16,
+        slug: 'javasentosa',
+        platform: 'website',
+        name: 'Java Sentosa Indonesia',
+        description: 'Trip & Tour Magelang Jogja',
+        techStack: 'Laravel, Bootstrap, jQuery, MySQL',
+        cover: '/images/javasentosa.png',
+        features: [
+            'Landing page Trip & Tour Magelang - Jogja',
+            'Support multi destinasi wisata dalam satu aplikasi',
+            'Katalog paket tour & harga',
+            'Form reservasi / booking tour'
+        ],
+        role: 'Fullstack Developer',
+        images: [
+            '/images/javasentosa.png',
+            '/images/javasentosa_02.png',
+        ],
+        source: 'https://javasentosaindonesia.com/',
+        category: 'freelance'
+    },
+    {
+        id: 17,
+        slug: 'kartoharjourney',
+        platform: 'website',
+        name: 'Kartoharjourney',
+        description: 'Website Desa & Jurnal Kegiatan KKN',
+        techStack: 'Laravel, Bootstrap, Tailwind CSS, MySQL',
+        cover: '/images/kartoharjourney.png',
+        features: [
+            'Profil & informasi desa',
+            'Jurnaling & dokumentasi kegiatan KKN',
+            'Galeri foto kegiatan',
+            'Artikel & publikasi program kerja'
+        ],
+        role: 'Fullstack Developer',
+        images: [
+            '/images/kartoharjourney.png',
+            '/images/kartoharjourney_02.png',
+        ],
+        source: 'https://kartoharjourney.my.id/',
+        category: 'freelance'
+    },
 ]
 
 export default portfolios
