@@ -147,7 +147,7 @@ const copyEmail = () => {
             v-for="portfolio in portfolios.slice(0, 4)" 
             :key="portfolio.id" 
             :to="{ name: 'portfolio-detail', params: { slug: portfolio.slug } }"
-            class="group p-6 bg-zinc-950/25 border border-zinc-850 hover:border-indigo-500/30 hover:scale-[1.015] hover:shadow-xl hover:shadow-indigo-500/[0.01] rounded-3xl transition-all duration-500 cursor-pointer flex flex-col justify-between h-48"
+            class="group p-6 bg-zinc-900/40 border border-zinc-800/80 hover:border-zinc-700 hover:bg-zinc-900/70 hover:scale-[1.015] hover:shadow-xl hover:shadow-black/30 rounded-3xl transition-all duration-300 cursor-pointer flex flex-col justify-between h-48"
           >
             <div class="space-y-2.5">
               <div class="flex items-center justify-between">
@@ -240,7 +240,7 @@ const copyEmail = () => {
         <div class="relative z-10 w-full sm:w-auto">
           <button 
             @click="copyEmail" 
-            class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-5 py-3 rounded-2xl bg-zinc-900 border border-zinc-800/80 text-zinc-300 hover:text-white hover:border-zinc-700 hover:bg-zinc-850 transition-all font-medium text-xs cursor-pointer shadow-lg shadow-black/10"
+            class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-5 py-3 rounded-2xl bg-zinc-900 border border-zinc-800/80 text-zinc-300 hover:text-white hover:border-zinc-700 hover:bg-zinc-800 transition-all font-medium text-xs cursor-pointer shadow-lg shadow-black/10"
           >
             <span class="material-icons !text-base text-indigo-400">{{ emailCopied ? 'check' : 'content_copy' }}</span>
             <span>{{ emailCopied ? 'Email Copied!' : emailAddress }}</span>

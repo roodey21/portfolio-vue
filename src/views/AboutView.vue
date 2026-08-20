@@ -22,7 +22,7 @@ import about from '../database/about.js'
         <a 
           href="https://1drv.ms/b/c/b859ab788ce5e2d3/EcAYyqidRr5AvELhSP7JaMMBjvkG7KczPZQMwmspIRwS9A?e=KIPQ3O" 
           target="_blank" 
-          class="inline-flex items-center gap-2 px-5 py-3 rounded-full text-xs font-bold bg-zinc-900 border border-zinc-850 hover:border-zinc-700 text-zinc-300 hover:text-white hover:bg-zinc-850 transition-all w-full md:w-auto text-center justify-center shadow-lg cursor-pointer"
+          class="inline-flex items-center gap-2 px-5 py-3 rounded-full text-xs font-bold bg-zinc-900 border border-zinc-800/80 hover:border-zinc-700 text-zinc-300 hover:text-white hover:bg-zinc-800 transition-all w-full md:w-auto text-center justify-center shadow-lg cursor-pointer"
         >
           <span class="material-icons !text-base text-indigo-400">download</span>
           <span>Download CV / Resume</span>
@@ -45,7 +45,7 @@ import about from '../database/about.js'
         <div class="mt-8 pt-6 border-t border-zinc-800/40">
           <h3 class="text-xs font-bold text-zinc-400 uppercase tracking-widest mb-3">Interests & Hobbies</h3>
           <div class="flex flex-wrap gap-2">
-            <span v-for="hobby in about.hobbies" :key="hobby" class="px-3.5 py-1.5 bg-zinc-900 border border-zinc-850 text-zinc-300 text-xs rounded-full font-medium capitalize hover:border-indigo-500/30 hover:text-indigo-400 transition-colors">
+            <span v-for="hobby in about.hobbies" :key="hobby" class="px-3.5 py-1.5 bg-zinc-900 border border-zinc-800/80 text-zinc-300 text-xs rounded-full font-medium capitalize hover:border-indigo-500/30 hover:text-indigo-400 transition-colors">
               {{ hobby }}
             </span>
           </div>
@@ -53,7 +53,7 @@ import about from '../database/about.js'
       </CardBasic>
 
       <!-- Profile Avatar Frame (col-4) -->
-      <div class="col-span-12 md:col-span-4 h-full min-h-[350px] relative rounded-3xl overflow-hidden border border-zinc-850 group bg-zinc-950/20">
+      <div class="col-span-12 md:col-span-4 h-full min-h-[350px] relative rounded-3xl overflow-hidden border border-zinc-800/80 group bg-zinc-950/20">
         <img 
           src="../assets/images/my-self.jpg" 
           alt="Fahrudin Yusuf Abadi" 
